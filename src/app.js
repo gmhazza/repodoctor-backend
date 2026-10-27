@@ -19,7 +19,7 @@ export function createApp() {
   // CORS Configuration
   app.use(
     cors({
-      origin: `${process.env.CORS_ORIGIN}`,
+      origin: `*`,
       methods: ['GET', 'POST', 'OPTIONS'],
       allowedHeaders: ['Content-Type', 'Authorization'],
     })
